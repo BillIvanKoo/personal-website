@@ -1,0 +1,42 @@
+#intro {
+  span.handwave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  span.typewrite {
+    border-right: .15em solid #333;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(  0.0deg)
+  }
+  10% {
+    transform: rotate(-10.0deg)
+  }
+  20% {
+    transform: rotate( 12.0deg)
+  }
+  30% {
+    transform: rotate(-10.0deg)
+  }
+  40% {
+    transform: rotate(  9.0deg)
+  }
+  50% {
+    transform: rotate(  0.0deg)
+  }
+  100% {
+    transform: rotate(  0.0deg)
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #333; }
+}
